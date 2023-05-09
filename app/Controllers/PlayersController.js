@@ -5,10 +5,8 @@ import { Player } from "../Models/Player.js";
 
 function test() {
   let testTemplate = ''
-  appState.values.forEach(v => testTemplate += v.TestTemplate)
-  setHTML('test', /*html*/`
-    <button class="btn btn-success text-white" onclick="test.playersController.test()"> test <button>
-  `)
+  appState.players.forEach(v => testTemplate += v.TestTemplate)
+  setHTML('test', testTemplate)
 }
 
 

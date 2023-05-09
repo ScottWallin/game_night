@@ -20,7 +20,7 @@ export class Player {
     ${this.name}
     </h5>
     </div>
-    <button class="btn btn-success square-top" onclick="test.playersController.test('${this.id}')">test</button>
+    <button class="btn btn-success square-top" onclick="app.test.playersController.test('${this.id}')">test</button>
     </div>
     `
   }
